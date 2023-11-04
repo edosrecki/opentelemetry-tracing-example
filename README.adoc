@@ -1,2 +1,20 @@
 # OpenTelemetry Tracing Example
 
+## Application
+
+Application consists of three services: client, frontend, and backend. Client sends requests to the frontend, which in turn sends requests to the backend, which communicates with the database. Each service pretends to do some work by sleeping for a random amount of time. The frontend and backend services fail randomly to simulate errors.
+
+image::architecture.svg[Architecture, align="center", width="100%"]
+
+## Run
+
+```sh
+# Create and start all containers in Docker Compose
+make up
+
+# Stop and remove all containers and volumes
+make rm
+
+# Help
+make help
+```
