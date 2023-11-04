@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "resolveJsonModule": true
+  }
+}

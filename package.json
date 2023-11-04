@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "opentelemetry-tracing-example",
+  "version": "0.0.0-dev",
+  "description": "Example of using OpenTelemetry SDK for Node.js to collect distributed traces and export them to Zipkin.",
+  "license": "ISC",
+  "author": "Dinko Osrecki",
+  "scripts": {
+    "format": "prettier-package-json --write && eslint --fix .",
+    "lint": "prettier-package-json -l && eslint ."
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "envalid": "^8.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.8.10",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "prettier-package-json": "^2.8.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "open-telemetry",
+    "opentelemetry",
+    "otel",
+    "otlp",
+    "telemetry",
+    "trace",
+    "tracing",
+    "zipkin"
+  ],
+  "engines": {
+    "node": "20.9.x"
+  }
+}
